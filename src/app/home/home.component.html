@@ -7,7 +7,7 @@
                     <img class="card-img-top" src="{{fruit.image}}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{fruit.nom}}</h5>
-                        <p class="card-text m-0">Prix: {{fruit.prixHT}}</p>
+                        <p class="card-text m-0">Prix: {{fruit.prixHT}} €</p>
                         <p class="card-text m-0">{{ fruit.quantite }}</p>
                         <div class="mb-4">
                             <button type="button" class="btn btn-danger me-2" (click)="decrement(fruit)">-</button>
@@ -39,7 +39,7 @@
                             <td class="px-3">{{ i + 1 }}</td>
                             <td class="px-3">{{ item.fruit.nom }}</td>
                             <td class="px-3">{{ item.quantity }}</td>
-                            <td class="px-3">{{ item.fruit.prixHT * item.quantity }}</td>
+                            <td class="px-3">{{ item.fruit.prixHT * item.quantity }} €</td>
                             <td class="px-3">
                                 <span>
                                     <a class="--bs-danger-text-emphasis" (click)="removeFromCart(i)">X</a>
@@ -65,8 +65,8 @@
                     </thead>
                     <tbody>
                         <td class="green px-5">{{ getTotalQuantity() }}</td>
-                        <td class="green px-5">{{ getTotalHT() }}</td>
-                        <td class="green px-5">{{ getTotalTTC() }}</td>
+                        <td class="green px-5">{{ getTotalHT() }} €</td>
+                        <td class="green px-5">{{ getTotalTTC() }} €</td>
                         <td class="green px-5">
                             <span>
                                 <a href="" class="--bs-danger-text-emphasis" (click)="cart = []">X</a>
