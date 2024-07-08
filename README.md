@@ -7,7 +7,7 @@ Bootstrap
 `npm install`
 `ng serve`
 
-## data
+## data : dossier mock
 Tableau de fruits dans un fichier mock
 
 ## services
