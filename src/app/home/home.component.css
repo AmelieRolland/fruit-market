@@ -22,3 +22,7 @@ h2 {
 nav {
     background-color: rgb(229, 135, 151);
 }
+
+table{
+--bs-table-striped-bg: #d56cd629;
+}
