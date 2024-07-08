@@ -26,3 +26,7 @@ nav {
 table{
 --bs-table-striped-bg: #d56cd629;
 }
+
+section {
+overflow-x: hidden;
+}
