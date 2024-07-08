@@ -1,0 +1,84 @@
+<section>
+    <div class="row">
+
+        <div class="d-flex flex-row flex-wrap col-12 col-md-6 col-lg-7">
+            <div *ngFor="let fruit of fruits" class="col-sm-12 col-md-12 col-lg-3">
+                <div class="card mb-4 mx-3">
+                    <img class="card-img-top" src="{{fruit.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{fruit.nom}}</h5>
+                        <p class="card-text m-0">Prix: {{fruit.prixHT}}</p>
+                        <p class="card-text m-0">{{ fruit.quantite }}</p>
+                        <div class="mb-4">
+                            <button type="button" class="btn btn-danger me-2" (click)="decrement(fruit)">-</button>
+                            <button type="button" class="btn btn-success" (click)="increment(fruit)">+</button>
+                        </div>
+                        <button type="button" class="btn btn-primary" (click)="addToCart(fruit)">Ajouter au panier</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <h2 class="text-center">Panier</h2>
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="border py-2 ">
+                        <tr>
+                            <th class="px-5">N°</th>
+                            <th class="px-5">Nom</th>
+                            <th class="px-5">Quantité</th>
+                            <th class="px-5">Prix</th>
+                            <th class="px-5"></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of cart; let i = index">
+                            <td class="px-5">{{ i + 1 }}</td>
+                            <td class="px-5">{{ item.fruit.nom }}</td>
+                            <td class="px-5">{{ item.quantity }}</td>
+                            <td class="px-5">{{ item.fruit.prixHT * item.quantity }}</td>
+                            <td class="px-5">
+                                <span>
+                                    <a class="--bs-danger-text-emphasis" (click)="removeFromCart(i)">X</a>
+                                </span>
+                            </td>
+
+
+                          </tr>
+
+                    </tbody>
+
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="px-5">Qté</th>
+                            <th class="px-5">Prix HT</th>
+                            <th class="px-5">Prix TTC</th>
+                            <th class="px-5"></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td class="green px-5">{{ getTotalQuantity() }}</td>
+                        <td class="green px-5">{{ getTotalHT() }}</td>
+                        <td class="green px-5">{{ getTotalTTC() }}</td>
+                        <td class="green px-5">
+                            <span>
+                                <a href="" class="--bs-danger-text-emphasis" (click)="cart = []">X</a>
+                            </span>
+                        </td>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</section>
