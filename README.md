@@ -17,12 +17,18 @@ Injection du tableau de fruits
 Interface Fruit
 
 ## home
-- Page d'accueil
+
+#### Cartes d'items :
+
 - Affichage de tous les items du tableau
-- Panier d'items
+- Possibilité de selectionner la quatité (incrémenter ou décrémenter)
 - Possibilité d'ajouter des items au panier
+- 'compteur' qui se remet à 0 si ajout au panier
+
+#### Panier :
+
 - Possibilité de supprimer des items du panier
 - Total des items du panier
-- Total du panier TTC
+- Total du panier HT, et TTC
 - Possibilité de vider le panier
 
