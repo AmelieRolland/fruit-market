@@ -20,27 +20,27 @@
             </div>
         </div>
 
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
             <h2 class="text-center">Panier</h2>
             <div class="col-sm-12 col-md-12 col-lg-10">
                 <table class="table table-striped table-bordered table-hover">
                     <thead class="border py-2 ">
                         <tr>
-                            <th class="px-5">N°</th>
-                            <th class="px-5">Nom</th>
-                            <th class="px-5">Quantité</th>
-                            <th class="px-5">Prix</th>
-                            <th class="px-5"></th>
+                            <th class="px-3">N°</th>
+                            <th class="px-3">Nom</th>
+                            <th class="px-3">Quantité</th>
+                            <th class="px-3">Prix</th>
+                            <th class="px-3"></th>
 
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let item of cart; let i = index">
-                            <td class="px-5">{{ i + 1 }}</td>
-                            <td class="px-5">{{ item.fruit.nom }}</td>
-                            <td class="px-5">{{ item.quantity }}</td>
-                            <td class="px-5">{{ item.fruit.prixHT * item.quantity }}</td>
-                            <td class="px-5">
+                            <td class="px-3">{{ i + 1 }}</td>
+                            <td class="px-3">{{ item.fruit.nom }}</td>
+                            <td class="px-3">{{ item.quantity }}</td>
+                            <td class="px-3">{{ item.fruit.prixHT * item.quantity }}</td>
+                            <td class="px-3">
                                 <span>
                                     <a class="--bs-danger-text-emphasis" (click)="removeFromCart(i)">X</a>
                                 </span>

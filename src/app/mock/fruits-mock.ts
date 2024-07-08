@@ -1,7 +1,7 @@
 export const fruits = [
     { image: 'https://media.istockphoto.com/id/1452520286/fr/vectoriel/vecteur-de-mangue-mangue-sur-fond-blanc-symbole-conception-du-logo-dessert-tha%C3%AFlandais.jpg?s=612x612&w=0&k=20&c=j5pqS2s_MMewRonU24wf-Hwb8TFFEKJQmyMwmVllZ4Q=', prixHT: 19, nom: 'Mangue', quantite: 0 },
 
-    { image: 'https://media.gettyimages.com/id/1296379574/fr/vectoriel/fruit-rouge-de-framboise-disolement-sur-le-blanc.jpg?s=612x612&w=gi&k=20&c=fj5Eo1wtLdDS550ya4VO1iMn-uHic2QvBJnA6TGccl8=', prixHT: 9, nom: 'Frambroise', quantite: 0 },
+    { image: 'https://media.gettyimages.com/id/1296379574/fr/vectoriel/fruit-rouge-de-framboise-disolement-sur-le-blanc.jpg?s=612x612&w=gi&k=20&c=fj5Eo1wtLdDS550ya4VO1iMn-uHic2QvBJnA6TGccl8=', prixHT: 9, nom: 'Framboise', quantite: 0 },
 
     { image: 'https://img.freepik.com/vecteurs-premium/regime-bananes-vecteur-illustration-dessin-anime_650087-313.jpg?w=2000', prixHT: 8, nom: 'Banane', quantite: 0 },
 
