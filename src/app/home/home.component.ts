@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FruitsService } from '../services/fruits.service';
 import { Fruit } from '../entities/entities';
 
