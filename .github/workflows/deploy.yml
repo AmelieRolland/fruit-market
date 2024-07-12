@@ -20,7 +20,7 @@ jobs:
         run: npm i
 
       - name: Build website
-        run: npm run build --output-path build --base-href /fruit-shop/
+        run: npm run build -- --output-path build --base-href /fruit-shop/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
