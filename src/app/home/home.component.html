@@ -36,7 +36,7 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let item of cart; let i = index">
-                            <td class="px-3">{{ i + 1 }}</td>
+                            <td class="px-3 px-3">{{ i + 1 }}</td>
                             <td class="px-3">{{ item.fruit.nom }}</td>
                             <td class="px-3">{{ item.quantity }}</td>
                             <td class="px-3">{{ item.fruit.prixHT * item.quantity }} €</td>
